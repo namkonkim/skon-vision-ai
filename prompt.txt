@@ -35,3 +35,18 @@ Chapter 01의 2번째  섹션인 CNN 핵심 이론이야.
   2-3. Activation Function : 이건 내가 내용을 자세히는 몰라... 비선형성을 주기위해 비선형 함수를 적용한다고만 아는데, 너가 Activation Function이 왜 필요한지 설명해주고, 주요 Activation Function인 ReLU, GeLU, Tanh 등을 소개하고 어떤상황에 어떤게 좋은지 설명할 수 있으면 이것도 설명해줘.
 
 
+---
+
+chapter 02. Vision AI Task별 주요 Loss, Metric 이론 내용을 작성하자.
+Vision AI Task에 대해서는 "chapter 1-2. Vision AI 주요 TASK" 부분에서 정리가 되었어.
+분류(Classification), 객체탐지(Object Detection), 분할(Segmentation), 이상탐지(Anomaly Detection) 총 4가지 TASK를 정의하였는데,
+각 TASK 별로 주로 사용하는 Loss 와 Metric 에 대해 markdown 파일로 자세히 정리하고, 시각적 자료도 생성할 수 있으면 해줘.
+시각적 자료는 흰색 배경에 그라데이션 없이 깔끔한 색상으로 핵심을 잘 표현하게 그려줘.
+
+---
+
+Loss는 수식을 작성하고, 수식에 대한 해석도 내용을 추가해줘.
+Metric은 수식만 작성을 해줘.
+위 내용을 @01_주요_Loss_Metric_이론.md 파일에 반영해줘.
+
+---
