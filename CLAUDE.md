@@ -43,7 +43,7 @@ skon-vision-ai/
 │       └── anomaly_reconstruction.png
 │
 ├── chapter 03. Shallow CNN 모델 및 학습 Loop 구현/
-│   └── README.md                    ← 미작성 (placeholder)
+│   └── 01_Shallow_CNN_실습.ipynb     ← PyTorch 기반 MNIST CNN 실습 노트북
 │
 └── chapter 04. 추론 및 Wrap-up/
     └── README.md                    ← 미작성 (placeholder)
@@ -74,9 +74,18 @@ skon-vision-ai/
 - **분할 (Segmentation)**: Pixel-wise CE Loss, Dice Loss / mIoU, Dice Coefficient
 - **이상 탐지 (Anomaly Detection)**: Reconstruction Loss (MSE/MAE) / AUROC, F1-Score
 
-### Chapter 03 — Shallow CNN 모델 및 학습 Loop 구현 🔲 (미작성)
+### Chapter 03 — Shallow CNN 모델 및 학습 Loop 구현 ✅ (작성 완료)
 
-예상 내용: PyTorch 기반 CNN 모델 정의, DataLoader, Training Loop, 검증 과정 실습 (`.ipynb`)
+**01_Shallow_CNN_실습.ipynb**
+- 환경 설정 및 라이브러리 임포트 (PyTorch, torchvision)
+- MNIST 데이터 로딩, 탐색, 시각화
+- DataLoader 구성 (Batch, Epoch, Step 개념 설명)
+- ⭐ Shallow CNN 모델 정의 (핵심 코드 주석 처리 → 수강생 직접 구현)
+- Loss(CrossEntropyLoss) 및 Optimizer(Adam) 설정
+- ⭐ Training Loop 구현 (Forward→Loss→Backward→Step 핵심 코드 주석 처리)
+- 학습 결과 시각화 (Loss/Accuracy 그래프)
+- 테스트 데이터 예측 결과 확인
+- 모델 가중치 저장 (.pth)
 
 ### Chapter 04 — 추론 및 Wrap-up 🔲 (미작성)
 
