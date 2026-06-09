@@ -46,7 +46,8 @@ skon-vision-ai/
 │   └── 01_Shallow_CNN_실습.ipynb     ← PyTorch 기반 MNIST CNN 실습 노트북
 │
 └── chapter 04. 추론 및 Wrap-up/
-    └── README.md                    ← 미작성 (placeholder)
+    ├── 01_추론_실습.ipynb              ← ipycanvas 손글씨 그리기 + 모델 추론 실습
+    └── 02_Wrap_up.md                  ← 전체 복습 및 현대적 프레임워크(timm, Lightning) 소개
 ```
 
 ---
@@ -87,9 +88,21 @@ skon-vision-ai/
 - 테스트 데이터 예측 결과 확인
 - 모델 가중치 저장 (.pth)
 
-### Chapter 04 — 추론 및 Wrap-up 🔲 (미작성)
+### Chapter 04 — 추론 및 Wrap-up ✅ (작성 완료)
 
-예상 내용: 학습된 모델로 직접 손글씨 이미지 추론, 결과 해석, 전체 과정 복습
+**01_추론_실습.ipynb**
+- 학습(Training) vs 추론(Inference) 차이 설명
+- ⭐ 학습된 모델 가중치 불러오기 (핵심 코드 주석 처리)
+- ipycanvas 기반 손글씨 드로잉 캔버스 (파일 업로드 없이 노트북 내 그리기)
+- ⭐ 이미지 전처리 (280×280 → 28×28, 정규화, Tensor 변환) (핵심 코드 주석 처리)
+- ⭐ 모델 추론 (Forward Pass + Softmax 확률 변환) (핵심 코드 주석 처리)
+- 클래스별 확률 막대 그래프 시각화
+- 올인원 셀 (저장→전처리→추론→시각화 한번에 실행)
+
+**02_Wrap_up.md**
+- 전체 교육 과정 복습 (Chapter 01 ~ 04)
+- 현대적인 프레임워크 활용 예시 (timm, PyTorch Lightning)로 5줄 이하 모델 빌드 시연
+- 핵심 키워드 정리 및 심화 학습 자료 링크
 
 ---
 
