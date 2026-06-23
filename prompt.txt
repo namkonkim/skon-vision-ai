@@ -85,3 +85,49 @@ chapter 04 Wrap-up 섹션에 대해 지시할게.
 간결한 코드로 EfficientNet 을 빌드하고 학습하는 코드를 짧게 보여줘서, "앞으로 이런식으로 코드를 작성할 것이다" 를 감 잡도록 해줘.
 이 내용을 markdown으로 작성해줘.
 
+---
+
+현재 교육 프로젝트에서 작성된 주피터노트북(.ipynb) 파일들을 교육생들이 실습할 수 있도록 이 PC에서 jupyter server를 띄우려고해.
+uv로 python 프로젝트를 정의하고, 필요한 패키지 및 환경들에 대해 pyproject.toml 정의 및 jupyter server 실행까지 테스트를 수행해줘.
+특히, pytorch의 경우 cuda 사용가능한 패키지로 index-url 설정도 신경써서 해줘.
+
+---
+
+이번엔 데이터 엔지니어링 관련된 교육 내용을 작성해야돼.
+현재 프로젝트 폴더에 chapter 11 ~ chapter 15 로 교육 주제는 선정을 해놨어. 확인해봐.
+chapter 11. 데이터 불균형 해소 부터 시작해보자.
+불균형 데이터 해소를 위해 많이 사용하는 기법들을 먼저 조사해봐.
+그리고 각 기법별로 구분지어서, 어떤 식으로 불균형을 해소하는지 접근 방법 / 해당 기법들의 세부 내용들 / 적용 시 기대효과에 대해 정리를 해줘.
+그리고, Augmentation / Sampler / Class Weights 에 대해서는 꼭 포함해줘.
+
+---
+
+Oversampling / Undersampling 같은 경우 Vision Image에서 잘 쓰지않은 Machine Learning쪽 내용이잖아. 두 내용은 지워주고, Sampler에서 Pytorch에서 제공하는 다양한 Sampler를 통해, 적은
+  클래스를 더 많이 뽑는 방식(WeightedRandomSampler)와 함께 다른 Sampler 기법도 있는지 조사해보고, 교육할만한 내용이면 추가를 해줘.
+  그리고 Class Weights 와 Focal Loss 를 Loss 로 묶은거 좋고, 두 개가 같은 레벨에서 사용되는 용어인지 확인해보고 Loss 레벨에서 두 카테고리를 알맞게 재조정이 필요하다면 진행해줘.
+  
+---
+
+다음으로 "chapter 12. 성능을 높히는 라벨링 가이드라인" 교육 내용을 작성하자.
+이 Chapter에 대해서는 Vision AI Task별로 이미지 5장씩을 직접 라벨링을 해보고, 성능을 높히기 위해 어떻게 라벨링을 하면 좋을 지 간단하게 가이드를 하고, 오토라벨링 컨셉에 대해 설명을 하려고 해.
+Task는 Classification (이미지 폴더로 구분), Object Detection (BBOX), Segmentation (Polygon), Oriented Boundary Box (BBOX with angles) 를 해볼거고, 라벨링툴로는 Labelme 를 설치 후 수행하도록 가이드 해줘.
+그리고 라벨링할 이미지는 인터넷에 찾거나 너가 직접 생성을 해줘도 돼. 단, Annotation 을 하는데 경계가 뚜렷하거나 Box치기 쉬운 이미지도 준비를 하지만 경계가 흐릿하고 Box치기 어려운 이미지 샘플도 준비를 해서, 각 Task 별로 5장의 이미지를 준비해줘.
+
+다음으로 성능을 높히기 위한 라벨링 가이드에 대해서는 너가 알아서 작성을 해줘. 라벨링 하는 사람들끼리 일관된 기준을 잡아야 되는데, 어떻게 기준을 잡으면 좋은 지도 포함해서.
+
+마지막으로 오토라벨링의 경우 SAM 모델을 사용하는 방법과 라벨링한 이미지를 가지고 간단한 모델을 직접학습시킨 후, 라벨링 안된 이미지를 추론하고 confidence가 높은 것들에 대해 일괄 라벨링 붙히는 방법에 대해 소개를 해주면 좋겠어.
+
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
